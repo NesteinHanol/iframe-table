@@ -1,0 +1,8 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Yatayda kaydırmayı engelle */
+    overflow-x: hidden;  /* Dikeyde kaydırmaya izin ver */
+  }

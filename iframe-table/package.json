@@ -1,0 +1,41 @@
+{
+  "name": "@genifrtab/iframe-table",
+  "version": "0.0.2",
+  "description": "This package allows you to automatically create iframe videos and show them on the screen according to the number of columns and change their style.",
+  "peerDependencies": {
+    "@angular/common": "^16.1.0",
+    "@angular/core": "^16.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NesteinHanol/iframe-table.git"
+  },
+  "keywords": [
+    "iframe",
+    "table",
+    "generic iframe",
+    "generic iframe table",
+    "card",
+    "iframe-card",
+    "iframe cardbody",
+    "iframe card",
+    "card body",
+    "video card body",
+    "iframe-table",
+    "video",
+    "iframe-video",
+    "front end",
+    "front-end",
+    "genifrtab"
+  ],
+  "author": "Nestein HANOL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NesteinHanol/iframe-table/issues"
+  },
+  "homepage": "https://github.com/NesteinHanol/iframe-table/blob/main/README.md",
+  "sideEffects": false
+}

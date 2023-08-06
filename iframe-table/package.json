@@ -37,18 +37,5 @@
     "url": "https://github.com/NesteinHanol/iframe-table/issues"
   },
   "homepage": "https://github.com/NesteinHanol/iframe-table/blob/main/README.md",
-  "sideEffects": false,
-  "module": "fesm2022/genifrtab-iframe-table.mjs",
-  "typings": "index.d.ts",
-  "exports": {
-    "./package.json": {
-      "default": "./package.json"
-    },
-    ".": {
-      "types": "./index.d.ts",
-      "esm2022": "./esm2022/genifrtab-iframe-table.mjs",
-      "esm": "./esm2022/genifrtab-iframe-table.mjs",
-      "default": "./fesm2022/genifrtab-iframe-table.mjs"
-    }
-  }
+  "sideEffects": false
 }

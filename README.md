@@ -2,6 +2,8 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
+This package allows you to automatically create iframe videos and show them on the screen according to the number of columns and change their style.
+
 ## Installation
 
 npm i @genifrtab/iframe-table
@@ -31,33 +33,33 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ''' Import
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    IframeTableModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        IframeTableModule
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 '''
  ---- html
 
 
-  @Input() videoList: VideoModel[] = [];
-  @Input() width:number = 560;
-  @Input() height:number = 315;
-  @Input() backgroundColor: string ="white";
-  @Input() titleColor: string ="black";
-  @Input() textColor: string = "black";
-  @Input() row_col :string ="col-md-4";
+      <!--@Input() videoList: VideoModel[] = [];
+      @Input() width:number = 560;
+      @Input() height:number = 315;
+      @Input() backgroundColor: string ="white";
+      @Input() titleColor: string ="black";
+      @Input() textColor: string = "black";
+      @Input() row_col :string ="col-md-4"; -->
 
-  <iframe-table [videoList]="videoList" [row_col]="'col-md-4'" [width]="?" [height]="?" [backgroundColor]="?" [titleColor]="?" [textColor]="?" ></iframe-table>
+      <iframe-table [videoList]="videoList" [row_col]="'col-md-4'" [width]="?" [height]="?" [backgroundColor]="?" [titleColor]="?" [textColor]="?" ></iframe-table>
 
   ---Component 
 
@@ -73,12 +75,12 @@ export class AppModule { }
         title = 'angularProject';
 
         videoList: VideoModel[] = [
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4',titler:"aaaa",description:"llll" },
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4',titler:"aaaa",description:"llll" },
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,titler:"aaaa",description:"llll"},
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,titler:"aaaa",description:"llll"},
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,titler:"aaaa",description:"llll"},
-            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,titler:"aaaa",description:"llll"}
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4',title:"title1",description:"description1" },
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4',title:"title2",description:"description2" },
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,title:"title3",description:"description3"},
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,title:"title4",description:"description4"},
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,title:"title5",description:"description5"},
+            { url: 'https://www.youtube.com/embed/5w6n_a32WE4' ,title:"title6",description:"description6"}
         
         ];
         }

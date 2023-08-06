@@ -4,13 +4,13 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export interface VideoModel {
   url: string;
-  titler:string;
+  title:string;
   description:string;
 }
 
 export class VideoListModel{
   url:SafeResourceUrl | undefined;
-  titler:string | undefined;
+  title:string | undefined;
   description:string | undefined;
 }
 
@@ -40,7 +40,7 @@ export class IframeTableComponent implements OnChanges{
    ngOnChanges() {
     this.videoList.forEach(element => {
       this.modeldata.description = element.description;
-      this.modeldata.titler = element.titler;
+      this.modeldata.title = element.title;
       this.modeldata.url = this.getSafeUrl(element.url);
         this.videoList_model.push(this.modeldata);
     });

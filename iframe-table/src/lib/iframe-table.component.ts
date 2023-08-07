@@ -39,6 +39,7 @@ export class IframeTableComponent implements OnChanges{
 
    ngOnChanges() {
     this.videoList.forEach(element => {
+       this.modeldata = new VideoListModel();
       this.modeldata.description = element.description;
       this.modeldata.title = element.title;
       this.modeldata.url = this.getSafeUrl(element.url);

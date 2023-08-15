@@ -1,10 +1,10 @@
 {
   "name": "@genifrtab/iframe-table",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "This package allows you to automatically create iframe videos and show them on the screen according to the number of columns and change their style.",
   "peerDependencies": {
-    "@angular/common": "^16.1.0",
-    "@angular/core": "^16.1.0"
+     "@angular/common": "8.x - 16.x",
+    "@angular/core": "8.x - 16.x"
   },
   "dependencies": {
     "tslib": "^2.3.0"
